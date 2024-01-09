@@ -1,6 +1,7 @@
 from django.db import models
 
-class datainsert(models.Model)
+class datainsert(models.Model):
     name = models.CharField
+    color = models.CharField
 
-# Create your models here.
+
