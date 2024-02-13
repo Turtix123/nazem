@@ -1,3 +1,9 @@
-from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
+
+import random
+
+def models_list(request):
+    random_number = random.randint(1,100)
+
+    return HttpResponse(f"random number {random_number}")
